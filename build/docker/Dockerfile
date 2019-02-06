@@ -11,11 +11,11 @@ RUN ./build.sh
 
 # Build server assets
 WORKDIR /src/server
-RUN npm install
+RUN npm install --unsafe-perm
 
 # Change to ssc
 WORKDIR /src/ssc
-RUN npm install
+RUN npm install --unsafe-perm
 
 EXPOSE 8010
 
