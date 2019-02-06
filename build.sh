@@ -10,7 +10,7 @@ then
   source $ENV
 fi
 
-npm install
+npm install --unsafe-perm
 exit_code=$?
 
 cd $OLD_PATH
